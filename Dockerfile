@@ -30,5 +30,5 @@ RUN apt-get update \
 RUN curl -fsSL https://bootstrap.pypa.io/get-pip.py | pypy \
   && curl -fsSL https://bootstrap.pypa.io/get-pip.py | python3.7 \
   && pip install --upgrade pip \
-  && pip install tox==$TOX_VERSION tox-pip-extensions==$TOX_PIP_EXT_VERSION \
+  && pip install tox tox-pip-extensions \
   && rm -rf /root/.cache/pip
